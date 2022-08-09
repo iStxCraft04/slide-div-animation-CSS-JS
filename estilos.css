@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    margin: 20px 100px;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+
+}
+#mitexto{
+    opacity: 0;
+    transition: all 0.3s;
+}
+.texto{
+    
+    animation: mianimacion 0.8s;
+    transition: all 1s;
+    opacity: 0;
+
+}
+@keyframes mianimacion {
+    0%{
+        transform:translateX(600px);
+            }
+    100%{
+        transform: translateX(0);
+    }
+}
+.mibtn{
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+    background-color:rgb(211, 1, 1);
+    color: white;
+    font-family: Arial black;
+    width: 230px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.5s;
+
+}
+.mibtn:hover{
+    background-color:rgb(145, 5, 0);
+    font-weight: bold;
+    transition: all 0.2s;
+    text-decoration: underline;
+
+}
